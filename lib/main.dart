@@ -3,6 +3,9 @@ import 'package:appfluter_ascom/screens/login_screen.dart';
 import 'package:appfluter_ascom/screens/news_screen.dart';
 import 'package:appfluter_ascom/screens/results_screen.dart';
 import 'package:flutter/material.dart';
+/*
+Pagina principal
+*/
 
 void main() => runApp(const MyApp());
 
