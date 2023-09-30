@@ -22,17 +22,20 @@ class ResultScreen extends StatelessWidget {
           //mainAxisAlignment: CrossAxisAlignment,
           children: [
             SizedBox(
-                child: ToggleList(
-              shrinkWrap: true,
-              children: [
-                ToggleListItem(
-                  title: Text('Portada Resultados'),
-                  content: Padding(
-                    padding: EdgeInsets.all(20),
-                    child: Text('Campeonato nacional Scotiabank'),
+                child: Padding(
+              padding: EdgeInsets.symmetric(vertical: 15, horizontal: 10),
+              child: ToggleList(
+                shrinkWrap: true,
+                children: [
+                  ToggleListItem(
+                    leading: SizedBox(
+                      height: 10,
+                    ),
+                    title: Text('Portada Resultados'),
+                    content: Text('Campeonato nacional Scotiabank'),
                   ),
-                ),
-              ],
+                ],
+              ),
             )),
             MyDatesBar(),
             MyLigaType(

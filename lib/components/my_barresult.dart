@@ -18,7 +18,8 @@ class ResultsBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
+    return Container(
+      decoration: const BoxDecoration(color: Color.fromRGBO(255, 255, 255, 1)),
       child: Center(
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           Row(
@@ -67,7 +68,10 @@ class ResultsBar extends StatelessWidget {
               ),
               const Padding(
                 padding: EdgeInsets.only(right: 10),
-                child: Icon(Icons.lock_clock),
+                child: Icon(
+                  Icons.keyboard_arrow_right,
+                  color: Color.fromRGBO(136, 136, 136, 1),
+                ),
               ),
             ],
           ),

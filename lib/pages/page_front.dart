@@ -45,15 +45,17 @@ class FrontScreen extends StatelessWidget {
                 children: [
                   GestureDetector(
                     onTap: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (BuildContext context) =>
-                              const NewsScreen()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (BuildContext context) =>
+                                  const NewsScreen()));
                     },
                     child: const MyTopNews(
-                      imageURL: 'lib/images/img3.png',
+                      imageURL: 'lib/images/img4.png',
                       title: 'ASCENSO',
                       subtitle:
-                          'San Luis ponía en riesgo la liguilla, pero ‘Chupete’ Suazo inventó un golazo',
+                          'En Cobreloa creen que este año cambia la historia y esta es la razón: “Creo que fue importante...”',
                     ),
                   ),
                   const Divider(
@@ -61,11 +63,20 @@ class FrontScreen extends StatelessWidget {
                     height: 5,
                     color: Color.fromRGBO(20, 20, 20, 20),
                   ),
-                  const ContainerShortNew(
-                    imageURL: 'lib/images/img1.png',
-                    title: 'Cobreloa - Colo Colo',
-                    subtitle:
-                        'Esto hace grande el clásico Colo Colo - Cobreloa: ni la U, ni la UC se acercan',
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (BuildContext context) =>
+                                  const NewsScreenOther()));
+                    },
+                    child: const ContainerShortNew(
+                      imageURL: 'lib/images/img5.png',
+                      title: 'TENIS',
+                      subtitle:
+                          'Jarry sigue imparable en China: venga a Garín y este será su nuevo ranking ATP',
+                    ),
                   ),
                   const Divider(
                     thickness: BorderSide.strokeAlignOutside,

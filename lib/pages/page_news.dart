@@ -7,6 +7,12 @@ class NewsScreen extends StatelessWidget {
   const NewsScreen({super.key});
   @override
   Widget build(BuildContext context) {
+    const info1 =
+        'El Campeonato Ascenso 2023 entra en la etapa más decisiva del año. Quedan tres fechas para el fin de la fase regular, que concluirá con el paso directo del monarca a Primera División. Cobreloa es el líder con 48 puntos y, después de más de siete años en la serie, posee la mejor chance para alzar el trofeo. La expectación es gigante en Calama y Rodrigo Pérez, un histórico del cuadro nortino, dialogó con AS horas antes del partido clave contra Temuco (44), en el estadio Germán Becker.';
+    const info2 =
+        'El plantel ha hecho una muy buena campaña. Esperamos que se cumpla el anhelo de tantos años de volver a Primera División, ha sido difícil el camino. Han venido jugando bastante bien, han sido regulares. Están en una instancia muy linda y depende exclusivamente de ellos”, sostuvo Pérez, quien ganó tres títulos nacionales en Calama y también fue DT del cuadro loíno en 2018.';
+    const titleNoticia =
+        'En Cobreloa creen que este año cambia la historia y esta es la razón: “Creo que fue importante...”';
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -29,10 +35,9 @@ class NewsScreen extends StatelessWidget {
         child: Column(
           children: [
             MyTopNews(
-              imageURL: 'lib/images/img3.png',
+              imageURL: 'lib/images/img4.png',
               title: 'ASCENSO',
-              subtitle:
-                  'San Luis ponía en riesgo la liguilla, pero ‘Chupete’ Suazo inventó un golazo',
+              subtitle: titleNoticia,
             ),
             BarAuthor(
               author: 'FELIPE SILVA',
@@ -41,8 +46,7 @@ class NewsScreen extends StatelessWidget {
               comments: null,
             ),
             InformationType1(
-              info:
-                  'Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. \n\nLorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. \n\nNo sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas',
+              info: info1 + '\n\n' + info2,
             )
           ],
         ),

@@ -27,13 +27,15 @@ class _BottomTabBarState extends State<BottomTabBar> {
               });
             },
             backgroundColor: const Color.fromARGB(255, 227, 227, 227),
+            selectedItemColor: const Color.fromRGBO(206, 2, 1, 1),
             items: const [
               BottomNavigationBarItem(
-                icon: Icon(Icons.abc_outlined),
+                backgroundColor: Colors.amber,
+                icon: Icon(Icons.home),
                 label: 'Portada',
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.abc_outlined),
+                icon: Icon(Icons.backup_table),
                 label: 'Resultados',
               ),
             ]));
