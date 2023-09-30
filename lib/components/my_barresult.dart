@@ -35,26 +35,35 @@ class ResultsBar extends StatelessWidget {
               Column(
                 children: [
                   Container(
+                      alignment: Alignment.center,
                       height: 50,
                       width: 80,
                       color: const Color.fromRGBO(248, 162, 0, 1),
                       child: Text(
                         horaPartido,
-                        style: const TextStyle(color: Colors.white),
+                        style: const TextStyle(
+                            color: Colors.white,
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold),
                       )),
                   Container(
+                      alignment: Alignment.center,
                       height: 25,
                       width: 80,
                       color: const Color.fromRGBO(208, 137, 3, 1),
                       child: Text(
                         estadio,
-                        style: const TextStyle(color: Colors.white),
+                        style: const TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontWeight: FontWeight.w300),
                       ))
                 ],
               ),
               Image.asset(
                 equipoDerechaImagen,
                 height: 50,
+                width: 50,
               ),
               const Padding(
                 padding: EdgeInsets.only(right: 10),
