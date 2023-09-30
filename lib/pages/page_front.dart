@@ -1,8 +1,5 @@
-import 'package:appfluter_ascom/components/my_buttonbartop.dart';
-import 'package:appfluter_ascom/components/my_shortnews.dart';
-import 'package:appfluter_ascom/components/my_topnews.dart';
-import 'package:appfluter_ascom/screens/login_screen.dart';
-import 'package:appfluter_ascom/screens/news_screen.dart';
+import 'package:appfluter_ascom/components/components.dart';
+import 'package:appfluter_ascom/pages/pages.dart';
 import 'package:flutter/material.dart';
 
 class FrontScreen extends StatelessWidget {

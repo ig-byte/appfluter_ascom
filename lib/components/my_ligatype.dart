@@ -1,4 +1,4 @@
-import 'package:appfluter_ascom/components/my_barresult.dart';
+import 'package:appfluter_ascom/components/components.dart';
 import 'package:flutter/material.dart';
 
 class MyLigaType extends StatelessWidget {
