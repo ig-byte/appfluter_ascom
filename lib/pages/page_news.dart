@@ -10,6 +10,9 @@ class NewsScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
+        leading: const BackButton(
+          onPressed: null,
+        ),
         elevation: BorderSide.strokeAlignCenter,
         backgroundColor: const Color.fromRGBO(206, 2, 1, 1),
         title: const Text(
