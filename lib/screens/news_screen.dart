@@ -1,6 +1,5 @@
 import 'package:appfluter_ascom/components/my_author.dart';
 import 'package:appfluter_ascom/components/my_infotype1.dart';
-import 'package:appfluter_ascom/components/my_navigationbar.dart';
 import 'package:appfluter_ascom/components/my_topnews.dart';
 import 'package:flutter/material.dart';
 
@@ -9,7 +8,6 @@ class NewsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: const NavigationBarAsCom(),
       appBar: AppBar(
         centerTitle: true,
         elevation: BorderSide.strokeAlignCenter,

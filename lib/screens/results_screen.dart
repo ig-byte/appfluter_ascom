@@ -1,7 +1,5 @@
 import 'package:appfluter_ascom/components/my_bardates.dart';
-import 'package:appfluter_ascom/components/my_barresult.dart';
 import 'package:appfluter_ascom/components/my_ligatype.dart';
-import 'package:appfluter_ascom/components/my_navigationbar.dart';
 import 'package:flutter/material.dart';
 import 'package:toggle_list/toggle_list.dart';
 
@@ -10,7 +8,6 @@ class ResultScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: const NavigationBarAsCom(),
       appBar: AppBar(
         centerTitle: true,
         elevation: BorderSide.strokeAlignCenter,

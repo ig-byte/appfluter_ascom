@@ -1,7 +1,8 @@
 import 'package:appfluter_ascom/components/my_buttonbartop.dart';
-import 'package:appfluter_ascom/components/my_navigationbar.dart';
 import 'package:appfluter_ascom/components/my_shortnews.dart';
 import 'package:appfluter_ascom/components/my_topnews.dart';
+import 'package:appfluter_ascom/screens/login_screen.dart';
+import 'package:appfluter_ascom/screens/news_screen.dart';
 import 'package:flutter/material.dart';
 
 class FrontScreen extends StatelessWidget {
@@ -9,7 +10,6 @@ class FrontScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        bottomNavigationBar: const NavigationBarAsCom(),
         appBar: AppBar(
           centerTitle: true,
           elevation: BorderSide.strokeAlignCenter,
@@ -20,11 +20,20 @@ class FrontScreen extends StatelessWidget {
             height: 120,
           ),
           actions: [
-            Padding(
-              padding: const EdgeInsets.only(right: 20, top: 5),
-              child: Image.asset(
-                'lib/images/iconUser.png',
-                width: 25,
+            GestureDetector(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (BuildContext context) =>
+                            const LoginScreen()));
+              },
+              child: Padding(
+                padding: const EdgeInsets.only(right: 20, top: 5),
+                child: Image.asset(
+                  'lib/images/iconUser.png',
+                  width: 25,
+                ),
               ),
             )
           ],
@@ -36,74 +45,81 @@ class FrontScreen extends StatelessWidget {
             */
             Expanded(
               child: ListView(
-                children: const [
-                  MyTopNews(
-                    imageURL: 'lib/images/img3.png',
-                    title: 'ASCENSO',
-                    subtitle:
-                        'San Luis ponía en riesgo la liguilla, pero ‘Chupete’ Suazo inventó un golazo',
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (BuildContext context) =>
+                              const NewsScreen()));
+                    },
+                    child: const MyTopNews(
+                      imageURL: 'lib/images/img3.png',
+                      title: 'ASCENSO',
+                      subtitle:
+                          'San Luis ponía en riesgo la liguilla, pero ‘Chupete’ Suazo inventó un golazo',
+                    ),
                   ),
-                  Divider(
+                  const Divider(
                     thickness: BorderSide.strokeAlignOutside,
                     height: 5,
                     color: Color.fromRGBO(20, 20, 20, 20),
                   ),
-                  ContainerShortNew(
+                  const ContainerShortNew(
                     imageURL: 'lib/images/img1.png',
                     title: 'Cobreloa - Colo Colo',
                     subtitle:
                         'Esto hace grande el clásico Colo Colo - Cobreloa: ni la U, ni la UC se acercan',
                   ),
-                  Divider(
+                  const Divider(
                     thickness: BorderSide.strokeAlignOutside,
                     height: 5,
                     color: Color.fromRGBO(20, 20, 20, 20),
                   ),
-                  ContainerShortNew(
+                  const ContainerShortNew(
                     imageURL: 'lib/images/img2.png',
                     title: 'ENTREVISTA AS',
                     subtitle:
                         '"Los panamericanos serán una fiesta súper grande; marcaán un antes y un después"',
                   ),
-                  Divider(
+                  const Divider(
                     thickness: BorderSide.strokeAlignOutside,
                     height: 5,
                     color: Color.fromRGBO(20, 20, 20, 20),
                   ),
-                  ContainerShortNew(
+                  const ContainerShortNew(
                     imageURL: 'lib/images/img3.png',
                     title: 'ASCENSO',
                     subtitle:
                         'San Luis ponía en riesgo la liguilla, pero ‘Chupete’ Suazo inventó un golazo',
                   ),
-                  Divider(
+                  const Divider(
                     thickness: BorderSide.strokeAlignOutside,
                     height: 5,
                     color: Color.fromRGBO(20, 20, 20, 20),
                   ),
-                  ContainerShortNew(
+                  const ContainerShortNew(
                     imageURL: 'lib/images/img1.png',
                     title: 'Cobreloa - Colo Colo',
                     subtitle:
                         'Esto hace grande el clásico Colo Colo - Cobreloa: ni la U, ni la UC se acercan',
                   ),
-                  Divider(
+                  const Divider(
                     thickness: BorderSide.strokeAlignOutside,
                     height: 5,
                     color: Color.fromRGBO(20, 20, 20, 20),
                   ),
-                  ContainerShortNew(
+                  const ContainerShortNew(
                     imageURL: 'lib/images/img2.png',
                     title: 'ENTREVISTA AS',
                     subtitle:
                         '"Los panamericanos serán una fiesta súper grande; marcarán un antes y un después"',
                   ),
-                  Divider(
+                  const Divider(
                     thickness: BorderSide.strokeAlignOutside,
                     height: 5,
                     color: Color.fromRGBO(20, 20, 20, 20),
                   ),
-                  ContainerShortNew(
+                  const ContainerShortNew(
                     imageURL: 'lib/images/img3.png',
                     title: 'ASCENSO',
                     subtitle:
