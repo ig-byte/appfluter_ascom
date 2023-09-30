@@ -1,5 +1,5 @@
 import 'package:appfluter_ascom/components/my_buttonbartop.dart';
-import 'package:appfluter_ascom/components/my_navigationbar.dart';
+import 'package:appfluter_ascom/components/my_navigationBar.dart';
 import 'package:appfluter_ascom/components/my_shortnews.dart';
 import 'package:appfluter_ascom/components/my_topnews.dart';
 import 'package:flutter/material.dart';
