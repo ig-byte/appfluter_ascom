@@ -50,7 +50,7 @@ class NewsScreen extends StatelessWidget {
               comments: null,
             ),
             InformationType1(
-              info: info1 + '\n\n' + info2,
+              info: '$info1\n\n$info2',
             )
           ],
         ),
