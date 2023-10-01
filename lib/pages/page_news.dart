@@ -3,6 +3,10 @@ import 'package:appfluter_ascom/components/my_infotype1.dart';
 import 'package:appfluter_ascom/components/my_topnews.dart';
 import 'package:flutter/material.dart';
 
+/*
+Ventana de noticia
+Muestra la notica con una ventana de scroll
+*/
 class NewsScreen extends StatelessWidget {
   const NewsScreen({super.key});
   @override

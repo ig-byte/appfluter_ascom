@@ -2,6 +2,14 @@ import 'package:appfluter_ascom/components/components.dart';
 import 'package:appfluter_ascom/pages/pages.dart';
 import 'package:flutter/material.dart';
 
+/*
+Ventana principal
+Esta ventana contiene 
+- una noticia principal
+- Otras noticias
+- Barra superior que contiene otros items
+- Barra inferior que tiene acceso a otras ventanas como la de resultados
+*/
 class FrontScreen extends StatelessWidget {
   const FrontScreen({super.key});
   @override

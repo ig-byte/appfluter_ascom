@@ -18,4 +18,3 @@ Para la copia del formato , se tomo en cuenta las siguientes 4 ventanas :
 
  
 
-

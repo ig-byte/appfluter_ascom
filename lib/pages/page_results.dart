@@ -2,6 +2,10 @@ import 'package:appfluter_ascom/components/my_bardates.dart';
 import 'package:appfluter_ascom/components/my_ligatype.dart';
 import 'package:flutter/material.dart';
 import 'package:toggle_list/toggle_list.dart';
+/*
+Ventana de resultados
+Esta ventana tiene los resultados de los equipo en la fecha deseada y liga correspondiente
+*/
 
 class ResultScreen extends StatelessWidget {
   const ResultScreen({super.key});

@@ -1,9 +1,5 @@
 import 'package:appfluter_ascom/components/components.dart';
 import 'package:flutter/material.dart';
-/*
-Pagina principal
-cambio de comentario
-*/
 
 void main() => runApp(const MyApp());
 

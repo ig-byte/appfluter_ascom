@@ -1,5 +1,10 @@
 import 'package:appfluter_ascom/components/components.dart';
 import 'package:flutter/material.dart';
+/*
+Ventana de login
+Esta ventana tiene los campos de correo electronico y contraseña, 
+en donde se muestra el teclado como entrada
+*/
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
