@@ -85,7 +85,7 @@ class BarAuthor extends StatelessWidget {
                         width: 5,
                       ),
                       Text(
-                        "0 Comentario",
+                        "4 Comentarios",
                         style: TextStyle(
                           color: Color.fromRGBO(41, 41, 41, 1),
                         ),

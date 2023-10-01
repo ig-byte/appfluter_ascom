@@ -38,9 +38,9 @@ class NewsScreenOther extends StatelessWidget {
               subtitle: titleNoticia,
             ),
             BarAuthor(
-              author: 'FELIPE SILVA',
-              dateString: '27 Septiembre 2023',
-              dataTimeString: '08:23 CEST',
+              author: 'SERGIO LIVINGSTON',
+              dateString: '25 Septiembre 2023',
+              dataTimeString: '05:32 CEST',
               comments: null,
             ),
             InformationType1(
